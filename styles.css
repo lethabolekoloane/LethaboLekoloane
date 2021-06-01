@@ -501,6 +501,19 @@ html {
         font-size: 28px;
     }
 }
+@media screen and (max-width: 320px) {
+    /* STYLES GO HERE */
+    .about-Wrapper {
+        height: 180vh;
+    }
+    .about-left {
+        height: 100vh;
+    }
+    .about-right {
+        height: 90vh;
+    }
+}
+
 
 
 /************************skills rating*********************************/
