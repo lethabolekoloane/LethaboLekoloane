@@ -15,6 +15,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.container12 {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -78,7 +83,7 @@ html {
 .navbar-wrapper {
     width: 100vw;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     left: 0;
     bottom: -100%;
@@ -420,29 +425,39 @@ html {
 }
 
 .btn {
-    border: none;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    border: 2px solid black;
-    border-radius: 20px;
-    padding: 0.55rem 0;
-    width: 130px;
-    font-weight: 600;
-    background: transparent;
-    margin: 0 0.5rem;
-    cursor: pointer;
+    background: #eaa023;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.cs-hidden {
+    background: black;
+}
+
+.details p {
+    font-size: 14px;
+    word-wrap: normal;
+}
+
+.btn p {
+    font-size: 14px;
+    color: black;
 }
 
 .btn.btn-black {
-    background: black;
-    color: white;
+    background: #eaa023;
+    color: black;
     border-color: var(--primary-color);
     transition: all 0.5s ease-in-out;
 }
 
 .btn.btn-black:hover {
-    background: white;
-    color: black;
+    background: black;
+    color: #eaa023;
     border-color: var(--grey-color);
 }
 
@@ -500,7 +515,52 @@ html {
     .fab {
         font-size: 28px;
     }
+    .container12 {
+        padding-top: 350px;
+        padding-bottom: 350px;
+        height: 90vh;
+    }
 }
+
+@media only screen and (min-width: 717px) {
+    .container {
+        width: 100vw;
+    }
+    .about-Wrapper {
+        height: 160vh;
+        width: 100vw;
+    }
+    .about-left {
+        height: 90vh;
+        width: 100vw;
+    }
+    .about-right {
+        height: 70vh;
+        width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+    .container {
+        width: 100%;
+    }
+    .about-Wrapper {
+        height: 100vh;
+        width: 100vw;
+    }
+    .about-left {
+        height: 90vh;
+        width: 50vw;
+    }
+    .about-right {
+        height: 90vh;
+        width: 45vw;
+    }
+    .about-left-content>div {
+        height: 70vh;
+    }
+}
+
 @media screen and (max-width: 320px) {
     /* STYLES GO HERE */
     .about-Wrapper {
@@ -513,7 +573,6 @@ html {
         height: 90vh;
     }
 }
-
 
 
 /************************skills rating*********************************/
@@ -767,6 +826,7 @@ abbr {
 
 .contact-heading {
     font-size: 3rem;
+    word-wrap: normal;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
@@ -783,6 +843,7 @@ abbr {
     color: var(--white-color);
     text-shadow: 0 1rem 2rem white;
     margin-bottom: 0.3rem;
+    word-wrap: normal;
 }
 
 @keyframes bg {
@@ -866,27 +927,23 @@ abbr {
 /*------------------------------footer----------------------------------------------------------*/
 
 .footer {
-    background-color: var(--grey-color);
-    padding: 2rem 0 1rem 0;
+    border-top: 1px solid white;
+    margin-bottom: auto;
+    background: black;
     width: 100%;
-}
-
-.footer-link {
-    font-size: 2rem;
-    color: var(--white-color);
-    margin: 0 2rem;
-    background-color: var(--grey-color);
-    padding: .1rem 1rem;
-    letter-spacing: 0.3rem;
-    transition: all 0.2s;
-}
-
-.footer-paragraph {
+    bottom: 0;
+    left: 0;
     text-align: center;
-    font-size: 1.5rem;
-    color: var(--secondary-color);
-    letter-spacing: 0.2rem;
-    margin-top: 2rem;
+    z-index: 1000;
+    padding-bottom: 1px;
+}
+
+.footer .copyright {
+    margin-top: 3px;
+    text-align: center;
+    font-size: 15px;
+    color: #eaa023;
+    margin-bottom: 0;
 }
 
 
@@ -914,4 +971,110 @@ abbr {
     bottom: 20px;
     visibility: visible;
     opacity: 1;
+}
+
+
+/*card*/
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.cards .new-arival {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cards .new-arival h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #eaa023;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.cards .new-arival h1:affter {
+    content: "";
+    height: 5px;
+    width: 325px;
+    background-color: #eee;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+.card2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: opxs 2px 4px rgba(0, 0, 0, 25%);
+    width: 425px;
+    text-align: center;
+    margin: 25px;
+    cursor: pointer;
+    height: 85vh;
+    background-color: var(--primary-color);
+}
+
+.image-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    width: 60%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.discription {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.discription h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #eaa023;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.discription p {
+    font-size: 14px;
+    letter-spacing: n1.5px;
+    margin-top: 10px;
+}
+
+.button-group {
+    margin-top: 30px;
+}
+
+.button-group .view {
+    background-color: #eaa023;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.button-group .view:hover {
+    color: #eaa023;
+    background-color: black;
 }
