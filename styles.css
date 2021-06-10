@@ -556,9 +556,6 @@ html {
         height: 90vh;
         width: 45vw;
     }
-    .about-left-content>div {
-        height: 70vh;
-    }
 }
 
 @media screen and (max-width: 320px) {
