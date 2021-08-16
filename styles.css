@@ -540,6 +540,54 @@ html {
     }
 }
 
+@media only screen and (min-width: 321px) {
+    .about-Wrapper {
+        height: 160vh;
+    }
+    .about-left {
+        height: 90vh;
+    }
+    .about-right {
+        height: 70vh;
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    .container {
+        width: 100%;
+    }
+    .about-Wrapper {
+        height: 100vh;
+        width: 100vw;
+    }
+    .about-left {
+        height: 90vh;
+        width: 50vw;
+    }
+    .about-right {
+        height: 90vh;
+        width: 45vw;
+    }
+}
+
+@media only screen and (min-width: 1021px) and (min-width: 997px) {
+    .container {
+        width: 100%;
+    }
+    .about-Wrapper {
+        height: 100vh;
+        width: 100vw;
+    }
+    .about-left {
+        height: 90vh;
+        width: 50vw;
+    }
+    .about-right {
+        height: 90vh;
+        width: 45vw;
+    }
+}
+
 @media only screen and (min-width: 1030px) and (max-width: 1366px) {
     .container {
         width: 100%;
@@ -615,7 +663,7 @@ html {
     height: 50%;
     background: linear-gradient(to left, red, var(--primary-color));
     border-radius: 50px;
-    animation: bar 16s ease infinite;
+    animation: bar 40s ease;
 }
 
 @keyframes bar {
@@ -663,7 +711,7 @@ abbr {
     top: 32px;
     z-index: 1;
     background: linear-gradient(to left, red, var(--primary-color));
-    animation: count 16s ease infinite;
+    animation: count 40s ease;
 }
 
 @keyframes count {
@@ -693,7 +741,7 @@ abbr {
 }
 
 .bar:nth-child(6) abbr {
-    left: 51.8%;
+    left: 52.8%;
 }
 
 .bar:nth-child(7) abbr {
@@ -818,7 +866,7 @@ abbr {
 .contact {
     padding: 3rem 0 3rem 0;
     text-align: center;
-    animation: bg 35s infinite;
+    animation: bg 30s infinite;
 }
 
 .contact-heading {
@@ -894,7 +942,7 @@ abbr {
     text-align: center;
     line-height: 60px !important;
     border-radius: 50%;
-    transition: 0.3s linear;
+    transition: 0.2s linear;
 }
 
 .card:hover .card-icon {
@@ -975,7 +1023,7 @@ abbr {
 
 .section {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     background-color: white;
 }
 
@@ -1021,8 +1069,9 @@ abbr {
     text-align: center;
     margin: 25px;
     cursor: pointer;
-    height: 85vh;
+    height: 100%;
     background-color: var(--primary-color);
+    border-radius: 5px;
 }
 
 .image-section {
