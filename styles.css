@@ -683,21 +683,27 @@ html {
 .bar:nth-child(3) span:before {
     width: 65%;
 }
-
 .bar:nth-child(4) span:before {
-    width: 72%;
+    width: 92%;
 }
 
 .bar:nth-child(5) span:before {
-    width: 78%;
+    width: 72%;
 }
 
 .bar:nth-child(6) span:before {
-    width: 55%;
+    width: 78%;
 }
 
 .bar:nth-child(7) span:before {
+    width: 55%;
+}
+
+.bar:nth-child(8) span:before {
     width: 72%;
+}
+.bar:nth-child(9) span:before {
+    width: 60%;
 }
 
 abbr {
@@ -731,21 +737,27 @@ abbr {
 .bar:nth-child(3) abbr {
     left: 62.8%;
 }
-
 .bar:nth-child(4) abbr {
-    left: 68.8%;
+    left: 88.8%;
 }
 
 .bar:nth-child(5) abbr {
-    left: 74.8%;
+    left: 68.8%;
 }
 
 .bar:nth-child(6) abbr {
-    left: 52.8%;
+    left: 74.8%;
 }
 
 .bar:nth-child(7) abbr {
+    left: 52.8%;
+}
+
+.bar:nth-child(8) abbr {
     left: 68.8%;
+}
+.bar:nth-child(9) abbr {
+    left: 58.8%;
 }
 
 
