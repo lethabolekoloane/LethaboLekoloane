@@ -663,7 +663,7 @@ html {
     height: 50%;
     background: linear-gradient(to left, red, var(--primary-color));
     border-radius: 50px;
-    animation: bar 40s ease;
+    animation: bar 15s ease;
 }
 
 @keyframes bar {
@@ -673,15 +673,15 @@ html {
 }
 
 .bar:nth-child(1) span:before {
-    width: 70%;
+    width: 95%;
 }
 
 .bar:nth-child(2) span:before {
-    width: 75%;
+    width: 95%;
 }
 
 .bar:nth-child(3) span:before {
-    width: 65%;
+    width: 85%;
 }
 .bar:nth-child(4) span:before {
     width: 92%;
@@ -692,18 +692,21 @@ html {
 }
 
 .bar:nth-child(6) span:before {
-    width: 78%;
+    width: 72%;
 }
 
 .bar:nth-child(7) span:before {
-    width: 55%;
+    width: 83%;
 }
 
 .bar:nth-child(8) span:before {
     width: 72%;
 }
 .bar:nth-child(9) span:before {
-    width: 60%;
+    width: 85%;
+}
+.bar:nth-child(10) span:before {
+    width: 75%;
 }
 
 abbr {
@@ -717,7 +720,7 @@ abbr {
     top: 32px;
     z-index: 1;
     background: linear-gradient(to left, red, var(--primary-color));
-    animation: count 40s ease;
+    animation: count 15s ease;
 }
 
 @keyframes count {
@@ -727,15 +730,15 @@ abbr {
 }
 
 .bar:nth-child(1) abbr {
-    left: 66.8%;
+    left: 89.8%;
 }
 
 .bar:nth-child(2) abbr {
-    left: 71.8%;
+    left: 90.8%;
 }
 
 .bar:nth-child(3) abbr {
-    left: 62.8%;
+    left: 81.8%;
 }
 .bar:nth-child(4) abbr {
     left: 88.8%;
@@ -746,18 +749,21 @@ abbr {
 }
 
 .bar:nth-child(6) abbr {
-    left: 74.8%;
+    left: 68.8%;
 }
 
 .bar:nth-child(7) abbr {
-    left: 52.8%;
+    left: 78.8%;
 }
 
 .bar:nth-child(8) abbr {
     left: 68.8%;
 }
 .bar:nth-child(9) abbr {
-    left: 58.8%;
+    left: 81.8%;
+}
+.bar:nth-child(10) abbr {
+    left: 72.8%;
 }
 
 
